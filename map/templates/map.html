@@ -160,6 +160,46 @@
         th {
             background-color: #f2f2f2;
         }
+        /*Alterações: Tabela */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        font-family: Arial, sans-serif;
+        background-color: #fff;
+    }
+
+    th, td {
+        padding: 12px 15px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    th {
+        background-color: #4CAF50;
+        color: white;
+        font-weight: bold;
+    }
+
+    /* Linhas alternadas */
+    tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    /* Hover */
+    tr:hover {
+        background-color: #f1f1f1;
+        cursor: pointer;
+    }
+
+    /* Estilo da borda */
+    .table-container {
+        margin: 20px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        overflow-x: auto;
+    }
     </style>
 </head>
 <body>
@@ -185,7 +225,7 @@
     {{ map.html.render|safe }}
 
     <div class="table-container">
-        <h2>Locais de Serviço</h2>
+        <h2>Serviços</h2>
         <table>
             <thead>
                 <tr>
